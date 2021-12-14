@@ -1,6 +1,7 @@
 import { extendConfig, extendEnvironment } from "hardhat/config";
 import { lazyObject } from "hardhat/plugins";
 import { HardhatConfig, HardhatUserConfig } from "hardhat/types";
+import "@dethcrypto/eth-sdk";
 import path from "path";
 
 import { ExampleHardhatRuntimeEnvironmentField } from "./ExampleHardhatRuntimeEnvironmentField";
@@ -41,6 +42,13 @@ extendConfig(
   }
 );
 
+const DEBUG = false;
+
+function debug(text: string) {
+  if (DEBUG) {
+    console.log(text);
+  }
+}
 extendEnvironment((hre) => {
   // We add a field to the Hardhat Runtime Environment here.
   // We use lazyObject to avoid initializing things until they are actually
