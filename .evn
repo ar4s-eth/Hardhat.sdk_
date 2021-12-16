@@ -1,0 +1,33 @@
+# ETH network specific node uri : `"ETH_NODE_URI_" + networkName.toUpperCase()`
+ETH_NODE_URI_MAINNET=https://mainnet.infura.io/v3/5d8ac21529fc47c48becb08b703b917d
+# generic node uri (if no specific found) :
+ETH_NODE_URI=https://eth-mainnet.alchemyapi.io/v2/V54-T-F_ud5wPfTyJM9Y3VZeERALMtFA
+
+# BSC network specific node uri : `"ETH_NODE_URI_" + networkName.toUpperCase()`
+BSC_NODE_URI_MAINNET=https://speedy-nodes-nyc.moralis.io/b9aed21e7bb7bdeb35972c9a/eth/mainnet/archive
+# generic node uri (if no specific found) :
+BSC_NODE_URI=https://speedy-nodes-nyc.moralis.io/b9aed21e7bb7bdeb35972c9a/eth/mainnet/archive
+
+# network specific mnemonic : `"MNEMONIC_ " + networkName.toUpperCase()`
+MNEMONIC_MAINNET=<mnemonic for mainnet>
+# generic mnemonic (if no specific found):
+MNEMONIC=<mnemonic>
+
+# mainnet account to impersonate
+GODMODE=<0x...>
+
+# coinmarketcap api key for gas report
+COINMARKETCAP_API_KEY=41ed3b92-c0eb-46bc-95b8-a6369edbe4ad
+
+# etherscan api's for fetching abi's to interact with contracts on the fork
+ETHERSCAN_API_KEY=J6UX239ZM5X61CCFMD9458BZWKRC59DX81
+ETHERSCAN_API_KEY2=3Y2HP8AZPF6QR2E7IS4321ZT85SZMI2X2T
+BSCSCAN_API_KEY=HXAP6U93UMAZWRQ9X6WSSVDHWA4X243WVV
+BSCSCAN_API_KEY2=Q1IXF6YEUSKCVYI8NY7MWKISUWQC1RIE3Z
+POLYGONSCAN_API_KEY=NCK4QNWZ6TE2VPCN9BNV1CNF75CK95SU2V
+
+HARDHAT_FORK_NUMBER=
+
+# amberdata for fetching contract types/data
+AMBERDATA_API=UAK9c1251aea…71c642f02e07
+#\"node ./_scripts.js fork:deploy\" 
