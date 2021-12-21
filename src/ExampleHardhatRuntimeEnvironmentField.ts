@@ -3,3 +3,4 @@ export class ExampleHardhatRuntimeEnvironmentField {
     return "hello";
   }
 }
+

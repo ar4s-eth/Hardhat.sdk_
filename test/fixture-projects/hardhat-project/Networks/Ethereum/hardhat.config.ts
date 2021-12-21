@@ -2,9 +2,10 @@
 import { HardhatUserConfig } from "hardhat/types";
 import "@nomiclabs/hardhat-ethers";
 import "@dethcrypto/eth-sdk"
-import "../../../src/index";
+import "../../index";
 import ethers from 'hardhat';
 import "@nomiclabs/hardhat-ethers"
+
 
 // https://github.com/Uniswap/v3-periphery-optimism/blob/main/hardhat.config.ts
 const config: HardhatUserConfig = {
@@ -16,3 +17,4 @@ const config: HardhatUserConfig = {
 };
 
 export default config;
+

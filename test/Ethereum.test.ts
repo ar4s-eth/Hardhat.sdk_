@@ -2,17 +2,17 @@
 import { assert } from "chai";
 import path from "path";
 
-import { ExampleHardhatRuntimeEnvironmentField } from "../src/ExampleHardhatRuntimeEnvironmentField";
-
+import { ExampleHardhatRuntimeEnvironmentField } from "./ExampleHardhatRuntimeEnvironmentField";
+import { sdk_ } from "hardhat";
 import { useEnvironment } from "./helpers";
 
 describe("Integration tests examples", function () {
   describe("Hardhat Runtime Environment extension", function () {
-    useEnvironment("hardhat-project");
+    useEnvironment("hardhat-project/Networks/Ethereum");
 
-    it("Should add the example field", function () {
+    it.only("Should add the example field", function () {
       assert.instanceOf(
-        this.hre.example,
+        this.hre.sdk_,
         ExampleHardhatRuntimeEnvironmentField
       );
     });

@@ -4,17 +4,15 @@ import path from "path";
 import { ExampleHardhatRuntimeEnvironmentField } from "../src/ExampleHardhatRuntimeEnvironmentField";
 import { useEnvironment } from "./helpers";
 
-
-
 describe("SDK Integration test", function () {
   describe("Hardhat Runtime Environment extension", function () {
     useEnvironment("hardhat-project");
 
-    it("--------------------------->", async function () {
+    it("Should find the instance of HardhatSdk_", async function () {
       // const boom = await this.hre.sdk;
-      console.log(`process.env  ----> `, this.hre.network)
+      // console.log(`process.env  ----> `, this.hre.network)
       assert.instanceOf(
-        this.hre,
+        this.hre.sdk_,
         ExampleHardhatRuntimeEnvironmentField
       );
     });

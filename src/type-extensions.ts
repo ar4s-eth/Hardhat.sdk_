@@ -3,8 +3,12 @@
 // To extend one of Hardhat's types, you need to import the module where it has been defined, and redeclare it.
 import "hardhat/types/config";
 import "hardhat/types/runtime";
+// import "ethers"
+// import "@nomiclabs/hardhat-ethers";
+// import "hardhat-deploy";
+import type * as Hardhatsdk_ from "@dethcrypto/eth-sdk-client"
 
-import { ExampleHardhatRuntimeEnvironmentField } from "./ExampleHardhatRuntimeEnvironmentField";
+import type { ExampleHardhatRuntimeEnvironmentField } from "./ExampleHardhatRuntimeEnvironmentField";
 
 declare module "hardhat/types/config" {
   // This is an example of an extension to one of the Hardhat config values.
@@ -29,6 +33,7 @@ declare module "hardhat/types/runtime" {
   // This is an example of an extension to the Hardhat Runtime Environment.
   // This new field will be available in tasks' actions, scripts, and tests.
   export interface HardhatRuntimeEnvironment {
-    example: ExampleHardhatRuntimeEnvironmentField;
+    example: ExampleHardhatRuntimeEnvironmentField,
+    sdk_: typeof Hardhatsdk_
   }
 }

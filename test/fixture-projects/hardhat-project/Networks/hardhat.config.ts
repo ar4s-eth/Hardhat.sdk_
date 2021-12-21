@@ -1,8 +1,11 @@
 // We load the plugin here.
 import { HardhatUserConfig } from "hardhat/types";
+import "@nomiclabs/hardhat-ethers";
+import "@dethcrypto/eth-sdk"
+import "../../index";
+import "@nomiclabs/hardhat-ethers"
 
-import "../../../src/index";
-
+// https://github.com/Uniswap/v3-periphery-optimism/blob/main/hardhat.config.ts
 const config: HardhatUserConfig = {
   solidity: "0.7.3",
   defaultNetwork: "hardhat",
@@ -12,3 +15,4 @@ const config: HardhatUserConfig = {
 };
 
 export default config;
+

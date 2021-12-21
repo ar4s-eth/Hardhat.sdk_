@@ -1,3 +1,32 @@
+import type * as eth_sdk from "@dethcrypto/eth-sdk-client"; //eth-sdk exports dynamic types based on eth-sdk.config.ts
+import { lazyFunction, lazyObject } from "hardhat/plugins";
+import {getBscSdk} from "@dethcrypto/eth-sdk-client"
+// import {getMainnetSdk} from "@dethcrypto/eth-sdk-client"
+// import {ethers} from "hardhat"
+
+// declare function require(moduleNames: string[], onLoad: (...args: any[]) => void): void;
+
+export { eth_sdk } 
+// export const eth_sdk = lazyFunction(() => require("@dethcrypto/eth-sdk-client"));
+
+// export const what = async () => {
+  // if(true) {
+    // require(["@dethcrypto/eth-sdk-client"],  
+    // (eth_sdk_client: typeof eth_sdk) => { 
+    // //   console.log(`inside what`)
+    // //   const TestConstructorFunction = async () => await function (this: any, getSdkType: any, getSdkContract?: any) {
+    // //     this.getSdkType = getSdkType;
+    // //     this.getSdkContract = getSdkContract;
+    // //     return
+    // // };
+    // //   const sdk = async () => new (TestConstructorFunction as any)(getBscSdk(await ethers.getSigner("0x0")))
+    //   const sdk = async () => getBscSdk(await ethers.getSigner("0x0"))
+    //   return console.log(`__-------_____---- sdk_`, sdk)
+    // })
+  // } 
+// }
+
+
 // import * as bunk from "@dethcrypto/eth-sdk-client"
 
 // export default class sdk_ {
